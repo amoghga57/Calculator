@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="outbox">
+        <div class="line1">
+            <input class="box" id="box1" placeholder="Enter..."></input>
+        </div>
+        <br>
+        <div class="line2">
+            <div class="buttline1">
+                <span class="ac"><button onclick="reboot()">AC</button></span>
+                <span class="DEL"><button onclick="undo()">DEL</button></span>
+            </div>
+        </div>
+        <br>
+        <div class="line3">
+            <div class="buttline2">
+                <span class="seven"><button onclick="b1(7)">7</button></span>
+                <span class="eigth"><button onclick="b1(8)">8</button></span>
+                <span class="nine"><button onclick="b1(9)">9</button></span>
+                <span class="divide"><button onclick="b1('/')">➗</button></span>
+            </div>
+        </div>
+        <br>
+        <div class="line4">
+            <div class="buttline3">
+                <span class="four"><button onclick="b1(4)">4</button></span>
+                <span class="five"><button onclick="b1(5)">5</button></span>
+                <span class="six"><button onclick="b1(6)">6</button></span>
+                <span class="multi"><button onclick="b1('*')">✖</button></span>
+            </div>
+        </div>
+        <br>
+        <div class="line5">
+            <div class="buttline4">
+                <span class="one"><button onclick="b1(1)">1</button></span>
+                <span class="two"><button onclick="b1(2)">2</button></span>
+                <span class="three"><button onclick="b1(3)">3</button></span>
+                <span class="sub"><button onclick="b1('-')">➖</button></span>
+            </div>
+        </div>
+        <br>
+        <div class="line6">
+            <div class="buttline5">
+                <span class="dot"><button onclick="b1('.')">.</button></span>
+                <span class="zero"><button onclick="b1(0)">0</button></span>
+                <span class="plus"><button onclick="done()">=</button></span>
+                <span class="equal"><button onclick="b1('+')">➕</button></span>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
